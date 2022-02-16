@@ -5,9 +5,5 @@
     <RootNamespace>AIHR_Task2</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-  </ItemGroup>
-
 
 </Project>

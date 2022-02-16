@@ -5,16 +5,16 @@ namespace AIHR_Task2.Models
 {
     public class SolarSystem
     {
-        public IList<CelestialBody> CelestialBodies = new List<CelestialBody>();
+        private IList<CelestialBody> CelestialBodies = new List<CelestialBody> {  new Sun() };
 
         public SolarSystem()
         {
-            Add(new Sun());
         }
          
         public void Add(CelestialBody planet)
         {
-            CelestialBodies.Add(planet);
+            if(planet.GetType() != typeof(Sun))
+                CelestialBodies.Add(planet);
         }
 
         public void Remove(CelestialBody planet)

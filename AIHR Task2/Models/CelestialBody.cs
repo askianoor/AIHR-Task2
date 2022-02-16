@@ -1,6 +1,6 @@
 ﻿namespace AIHR_Task2.Models
 {
-    public abstract class CelestialBody
+    public class CelestialBody
     {
         public string Name { get; set; }
         public string Picture { get; set; }

@@ -4,17 +4,13 @@ namespace AIHR_Task2.Models.Planets.Stars
 {
     public sealed class Sun: Star
     {
-        private static Sun _instance;
-
-        public static Sun GetInstance()
+        public Sun()
         {
-            return _instance ??= new Sun
-            {
-                DistanceFromSun = 0,
-                Mass = 1988500,
-                Name = "Sun",
-                OrbitalPeriod = 226,
-            };
+            DistanceFromSun = 0;
+            Mass = 1988500;
+            Name = "Sun";
+            OrbitalPeriod = 226;
         }
+            
     }
 }
