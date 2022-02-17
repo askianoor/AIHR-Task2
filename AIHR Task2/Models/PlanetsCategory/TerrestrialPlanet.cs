@@ -1,6 +1,6 @@
 ﻿namespace AIHR_Task2.Models.PlanetsCategory
 {
-    public class TerrestrialPlanet: CelestialBody
+    public abstract class TerrestrialPlanet: CelestialBody
     {
     }
 }

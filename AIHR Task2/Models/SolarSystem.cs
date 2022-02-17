@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using AIHR_Task2.Models.Planets.Stars;
 
 namespace AIHR_Task2.Models
@@ -20,6 +22,11 @@ namespace AIHR_Task2.Models
         public void Remove(CelestialBody planet)
         {
             CelestialBodies.Remove(planet);
+        }
+
+        public List<CelestialBody> GetSortedSolarSystemByOrbitalPeriodAsync()
+        {
+            return CelestialBodies.OrderBy(t => t.OrbitalPeriod).ToList();
         }
     }
 }
